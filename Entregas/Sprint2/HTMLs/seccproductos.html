@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Fonts/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="css/seccproductos.css" />
+    <link  rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Sección Tours y Paseos</title>
+</head>
+<body>
+ <!--HEADER-->  
+ <!-- PRINCIPIO DE HEADER -->
+ <header class="sticky-top">
+        <div class="container">
+           <div class="row">
+      <!-- LOGO -->
+      <div class="col-lg-3 col-md-3">
+           <div class="logo">
+                   <img src="./Images/logoSinMargen.png">
+            </div>
+           </div>
+      <!-- buscador -->
+      <div class="col-lg-6 col-md-6">        
+      <div class="conteinerBuscador">
+               <form
+                 class="header-search"
+                 action="/es/search"
+                 method="get"
+                 role="search"
+               >
+                 <svg
+                   xmlns="http://www.w3.org/2000/svg"
+                   viewBox="0 0 26 28"
+                   aria-hidden="true"
+                   class="search-icon"
+                 >
+                   <path
+                     d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zm8 13c0 1.094-.906 2-2 2a1.96 1.96 0 01-1.406-.594l-5.359-5.344a10.971 10.971 0 01-6.234 1.937c-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-.672 4.406-1.937 6.234l5.359 5.359c.359.359.578.875.578 1.406z"
+                   ></path>
+                 </svg>
+                 <input
+                   type="search"
+                   class="search-input-field"
+                   id="main-q"
+                   name="q"
+                   pattern="(.|\s)*\S(.|\s)*"
+                   required=""
+                   placeholder="¿Qué estás buscando?"
+                 />
+               </form>
+           </div>
+         </div>
+      
+         <div class="col-lg-3 col-md-3">  
+         <div class="contenedorIconos">
+               <ul>
+                 <!-- usuario -->
+                 <li class="usuario">
+                   <a href="http://">
+                     <img src="./Images/avatar_90929.png"
+                   /></a>
+                 </li>
+                 <!-- carrito -->
+                 <li class="carrito">
+                   <a href="http://"
+                     ><img src="./Images/shoppingcart_112424.ico"
+                   /></a>
+                 </li>
+                 <!-- preguntas -->
+                 <li class="preguntas">
+                   <a href="http://"
+                     ><img src="./Images/questionscircularbutton_79759.ico"
+                   /></a>
+                 </li>
+               </ul>
+           </div>
+         </div>
+         </div>
+       </div>
+    </header>
+    
+      
+      <div class="sticky-top header-mobile">
+      
+       <div class="col-2">
+         <a class="navbar-brand" href="#"><img
+           alt="logo" class = "img-responsive" width = "100%"
+           src="images/logoSinMargen.png"></a>
+         </div>
+      
+           <div class="col-5">
+             <div class="centradoBuscador">
+      <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+         </div>
+        </div>
+      <div class="col-5">
+       <nav class=" navbar navbar-expand-md navbar-light">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarCollapse">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Mi Cuenta</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Crear cuenta</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Tours</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Ayuda</a>
+             </li>
+           </ul>
+          </div>
+       </div>
+       </nav>
+       </div>
+    <!-- FIN DE HEADER -->
+ <!--TITULO ACTIVIDAD-->
+ <div class="actividades-container">
+        <div class="titulo"><h1>Tours y Paseos</h1></div>
+    </div>
+ 
+  
+ <div class="container">
+     
+     <!--BOXES ACT-->
+     <div class="row">
+         <div class="alineacion-central">
+             <div class="col-lg-3 col-md-6 col-sm-12">
+                 <div class="box-producto">
+                     <img class="imagen-producto" src="Images/act1.jpg" />
+                
+                     <div class="nombre-tour">Parc Güell</div>
+                     <div class="descripcion-tour">
+                        Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios. </div>
+                     <div class="linea-precio">
+                         Antes <span class="precio-original"> US$ 10</span> con BTours
+                         <span class="precio-BT">US$8!</span>
+                     </div>
+                     <div class="boton-ver">
+                         <button type="button" class="btn btn-warning">Ver más</button>
+                     </div>
+                  </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-12">
+                 <div class="box-producto">
+                      <img class="imagen-producto" src="Images/act2.jpg" />
+                     <div class="nombre-tour">Teleférico Montjuic</div>
+                     <div class="descripcion-tour">
+                            Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios. 
+                        </div>
+                    
+                     <div class="linea-precio">
+                           Antes <span class="precio-original"> US$ 20</span> con BTours
+                           <span class="precio-BT">US$18!</span>
+                     </div>
+                     <div class="boton-ver">
+                     <button type="button" class="btn btn-warning">Ver más</button>
+                     </div>
+                    </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-12">
+                 <div class="box-producto">
+                     <img class="imagen-producto" src="Images/act3.jpg" />
+                     
+                     <div class="nombre-tour">Acuario</div>
+                     <div class="descripcion-tour">
+                         Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios. 
+                     </div>
+                 
+                     <div class="linea-precio">
+                     Antes <span class="precio-original">US$ 20</span> con BTours
+                     <span class="precio-BT">US$18!</span>
+                     </div>
+                     <div class="boton-ver">
+                     <button type="button" class="btn btn-warning">Ver más</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-12">
+                 <div class="box-producto">
+                     <img class="imagen-producto" src="Images/act4.jpg" />
+                     
+                     <div class="nombre-tour">Palau de la musica</div>
+                     <div class="descripcion-tour">
+                         Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios.                
+                     </div>
+                     <div class="linea-precio">
+                         Antes <span class="precio-original">US$ 18</span> con BTours
+                         <span class="precio-BT">US$16!</span>
+                     </div>
+                     <div class="boton-ver">
+                     <button type="button" class="btn btn-warning">Ver más</button>
+                     </div>
+                    </div>
+             </div>
+         </div>
+     </div>
+     <div class="row">
+            <div class="alineacion-central">
+                <div class="col-lg-3 col-md-6 col-sm-12"> 
+                 <div class="box-producto">
+                     <img class="imagen-producto" src="Images/act5.jpg" />
+                     
+                     <div class="nombre-tour">Sagrada Familia</div>
+                     <div class="descripcion-tour">
+                         Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios.
+                     </div>
+                     <div class="linea-precio">
+                         Antes <span class="precio-original">US$ 20</span> con BTours
+                     <span class="precio-BT">US$18!</span>
+                     </div>
+                     <div class="boton-ver">
+                     <button type="button" class="btn btn-warning">Ver más</button>
+                     </div>
+                    </div> 
+             </div>
+                <div class="col-lg-3 col-md-6 col-sm-12"> 
+                    <div class="box-producto">
+                       <img class="imagen-producto" src="Images/act6.jpg" />
+                       
+                       <div class="nombre-tour">Bike Tour</div>
+                       <div class="descripcion-tour">
+                            Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios.
+                       </div>
+                       <div class="linea-precio">
+                              Antes <span class="precio-original">US$ 30</span> con BTours
+                              <span class="precio-BT">US$28!</span>
+                       </div>
+                       <div class="boton-ver">
+                       <button type="button" class="btn btn-warning">Ver más</button>
+                       </div>
+                    </div>   
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12"> 
+                    <div class="box-producto">
+                           <img class="imagen-producto" src="Images/act7.jpg" />
+                           
+                           <div class="nombre-tour">La Pedrera</div>
+                           <div class="descripcion-tour">
+                                Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios.
+                           </div>
+                           <div class="linea-precio">
+                                  Antes <span class="precio-original"> $25</span> con BTours
+                                  <span class="precio-BT">US$23!</span>
+                           </div>
+                           <div class="boton-ver">
+                           <button type="button" class="btn btn-warning">Ver más</button>
+                           </div>
+                    </div>   
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12"> 
+                    <div class="box-producto">
+                           <img class="imagen-producto" src="Images/act8.jpg" />
+                           
+                           <div class="nombre-tour">Tour en autobus</div>
+                           <div class="descripcion-tour">
+                                Nuestro free tour por Barcelona es ideal para comenzar a explorar la ciudad. Recorreremos el centro histórico de la Ciudad Condal para descubrir todos sus misterios.
+                           </div>
+                           <div class="linea-precio">
+                                  Antes <span class="precio-original"> $25</span> con BTours
+                                  <span class="precio-BT">US$20!</span>
+                           </div>
+                           <div class="boton-ver">
+                           <button type="button" class="btn btn-warning">Ver más</button>
+                           </div>
+                    </div>
+                  </div>
+         </div>
+     </div>
+     
+     <!--OTRAS CATEGORIAS-->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12"> 
+                <div class="tituloActRec">
+                   <div class="subrayado">Otras categorias</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+         <div class="alineacion-act">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="box-act">
+                        <img class="imagen-act" src="Images/cat-1.jpg">
+                        <span class="nombre-cat">Talleres y Clases</span>
+                 </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6"> 
+                    <div class="box-act">
+                      <img class="imagen-act" src="Images/cat-2.jpg">
+                     <span class="nombre-cat">Espectaculos</span>
+                    </div> 
+                </div>
+               <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="box-act">
+                     <img class="imagen-act" src="Images/cat-3.jpg">
+                     <span class="nombre-cat">Arte y Cultura</span>
+                 </div>
+               </div>
+                <div class="col-lg-3 col-md-6 col-sm-6"> 
+                    <div class="box-act">
+                     <img class="imagen-act" src="Images/cat-4.jpg">
+                     <span class="nombre-cat">Deporte y Aventura</span>
+                 </div>
+                </div>
+             
+         </div>
+     </div>
+ </div>
+ <!--FOOTER-->
+ <footer>
+        <div class="containter">
+            <div class="row">
+                <div class="col-12">
+                    <div class="opciones">
+                        <ul>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><b>|</b></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><b>|</b></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="rs">
+                        <ul>
+                            <li><a href="https://facebook.com/barcelonatours"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://instagram/barcelonatours"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter/barcelonatours"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <!--SCRIPT FOOTER-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dc516cd5e4.js" crossorigin="anonymous"></script>
+
+ <!--SCRIPT BOOTSTRAP-->
+ <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

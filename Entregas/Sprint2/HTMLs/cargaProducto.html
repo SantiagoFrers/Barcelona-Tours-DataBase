@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/cargaProducto.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- FontAwsome -->
+    <link rel="stylesheet" href="./Fonts/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- PRINCIPIO DE HEADER -->
+<header class="sticky-top">
+    <div class="container">
+       <div class="row">
+  <!-- LOGO -->
+  <div class="col-lg-3 col-md-3">
+       <div class="logo">
+               <img src="./Images/logoSinMargen.png">
+        </div>
+       </div>
+  <!-- buscador -->
+  <div class="col-lg-6 col-md-6">        
+  <div class="conteinerBuscador">
+           <form
+             class="header-search"
+             action="/es/search"
+             method="get"
+             role="search"
+           >
+             <svg
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 26 28"
+               aria-hidden="true"
+               class="search-icon"
+             >
+               <path
+                 d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zm8 13c0 1.094-.906 2-2 2a1.96 1.96 0 01-1.406-.594l-5.359-5.344a10.971 10.971 0 01-6.234 1.937c-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-.672 4.406-1.937 6.234l5.359 5.359c.359.359.578.875.578 1.406z"
+               ></path>
+             </svg>
+             <input
+               type="search"
+               class="search-input-field"
+               id="main-q"
+               name="q"
+               pattern="(.|\s)*\S(.|\s)*"
+               required=""
+               placeholder="¿Qué estás buscando?"
+             />
+           </form>
+       </div>
+     </div>
+  
+     <div class="col-lg-3 col-md-3">  
+     <div class="contenedorIconos">
+           <ul>
+             <!-- usuario -->
+             <li class="usuario">
+               <a href="http://">
+                 <img src="./Images/avatar_90929.png"
+               /></a>
+             </li>
+             <!-- carrito -->
+             <li class="carrito">
+               <a href="http://"
+                 ><img src="./Images/shoppingcart_112424.ico"
+               /></a>
+             </li>
+             <!-- preguntas -->
+             <li class="preguntas">
+               <a href="http://"
+                 ><img src="./Images/questionscircularbutton_79759.ico"
+               /></a>
+             </li>
+           </ul>
+       </div>
+     </div>
+     </div>
+   </div>
+  </header>
+  </div>
+  
+  <div class="sticky-top header-mobile">
+  
+   <div class="col-2">
+     <a class="navbar-brand" href="#"><img
+       alt="logo" class = "img-responsive" width = "100%"
+       src="images/logoSinMargen.png"></a>
+     </div>
+  
+       <div class="col-5">
+         <div class="centradoBuscador">
+  <input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+     </div>
+    </div>
+  <div class="col-5">
+   <nav class=" navbar navbar-expand-md navbar-light">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav mr-auto">
+         <li class="nav-item active">
+           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Mi Cuenta</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Crear cuenta</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Tours</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Ayuda</a>
+         </li>
+       </ul>
+      </div>
+   </div>
+   </nav>
+   </div>
+   <!-- FIN DE HEADER -->
+
+    <main>
+        <div class="container bg-color">
+            <form action="#" method="POST">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="carga-archivo">
+                            <div class="form-group">
+                                <label for="text">Titulo</label>
+                                <input type="text" class="form-control" id="text" aria-describedby="text" placeholder="Ingrese el titulo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="precio">Precio</label>
+                                <input type="number" class="form-control" id="precio" placeholder="Ingrese el precio" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripcion del Producto</label>
+                                <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="seleccionar-archivo" lang="es" required>
+                                <label class="custom-file-label" for="seleccionar-archivo">Seleccionar Archivo</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 opciones-carga-archivo">
+                        <div class="actividades">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividades" id="actividades" value="actividad-recomendada" checked>
+                                <label class="form-check-label opcion-act" for="tipoAct">
+                                Actividad recomendada
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="actividades" id="actividades" value="actividad-recomendada">
+                                <label class="form-check-label opcion-act" for="tipoAct">
+                                Actividad más buscada
+                                </label>
+                            </div>
+                        </div>
+                        <label class="categoria" for="">Categoría</label>
+                        <div class="opciones-categoria">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Tours y Paseos" checked>
+                                <label class="form-check-label" for="categoria">
+                                Tours y Paseos
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Espectaculos y Entretenimiento">
+                                <label class="form-check-label" for="categoria">
+                                Espectaculos y Entretenimiento
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Talleres y Classes">
+                                <label class="form-check-label" for="categoria">
+                                Talleres y Classes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Aventura y Deporte">
+                                <label class="form-check-label" for="categoria">
+                                Aventura y Deporte
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Arte y Cultura">
+                                <label class="form-check-label" for="categoria">
+                                Arte y Cultura
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Gastronomia">
+                                <label class="form-check-label" for="categoria">
+                                Gastronomia
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Belleza y Salud">
+                                <label class="form-check-label" for="categoria">
+                                Belleza y Salud
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="categoria" id="categoria" value="Portada HOME">
+                                <label class="form-check-label subtitulo" for="categoria">
+                                Portada HOME
+                                </label>
+                            </div>
+                            <div class="botones">
+                                <input class="btn btn-outline-success btn-sm" type="submit" value="Publicar">
+                                <input class="btn btn-outline-warning btn-sm" type="reset" value="Vista Previa">
+                                <input class="btn btn-outline-danger btn-sm" type="reset" value="Reiniciar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="containter">
+            <div class="row">
+                <div class="col-12">
+                    <div class="opciones">
+                        <ul>
+                            <li><a href="#">Trabaja con nosotros</a></li>
+                            <li><b>|</b></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><b>|</b></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="rs">
+                        <ul>
+                            <li><a href="https://facebook.com/barcelonatours"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://instagram/barcelonatours"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter/barcelonatours"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT DE bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/dc516cd5e4.js" crossorigin="anonymous"></script>
+</body>
+</html>

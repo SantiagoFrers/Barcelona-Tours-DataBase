@@ -1,0 +1,4 @@
+slider 900x350
+icono menu
+producto home/productos 350x200
+ficha producto

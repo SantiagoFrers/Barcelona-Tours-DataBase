@@ -1,0 +1,260 @@
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    flex-direction: column;
+
+}
+/* TITULO */
+.container-fluid{
+    display: flex;
+   
+}
+.head h1{
+    font-size: 50px
+}
+.subtitulo{
+    display: flex;
+    margin-bottom: 5px;
+}
+.estrellas{
+    color: #ffd22b;
+    position: relative;
+    right: 10px;
+}
+.opiniones{
+   position: relative;
+    left: 10px
+}
+
+.cuantas{
+    color: #9d001b;
+    margin-left: 3px;
+ 
+}
+
+/* IMAGEN */
+.imagenPortada img{
+    max-width: 100%;
+    position: relative;
+}
+
+/* INFO TOUR */
+.infoTour{
+    margin-top: 20px;
+}
+.intro{
+    padding: 5px;
+   position: relative;
+    left: 5px;
+    font-size: 17px;
+    margin-top:22px
+}
+
+.infoGral{
+    background: white;
+    margin-top: 40px; 
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+    padding-bottom: 8px;
+}
+
+.infoGral h2{
+    margin-left: 15px;
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.infoGral ul{
+    position: relative;
+    top: 5px;
+    list-style: none;
+    
+}
+.infoGral li{
+    margin: 5px;
+    position: relative;
+    top: 2px
+    
+}
+
+.infoGral ul li::before{
+    content: "\2022";
+    color: #9d001b;
+    font-weight: bold;
+    padding: 5px;
+    
+    
+}
+
+.boxReserva{
+   background: white;
+   position: relative;
+    top: 17px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+    padding: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+   
+    
+}
+
+.precioAntes{
+    text-decoration: line-through red ;
+   
+    font-size: 20px;
+     font-weight: bold;
+    
+    
+}
+
+.off{
+    font-size: 20px;
+    font-weight: bold;
+}
+.precioAhora{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.btn-danger{
+    background-color: #9d001b;
+    width: 150px;
+    margin-top: 5px;    
+}
+
+.carousel-inner{
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.resenas{
+   
+    margin-top: 45px;
+}
+
+.resena{
+    
+    font-size: 30px;
+    text-decoration: underline #9d001b; 
+}
+
+h3{
+    font-size: 20px;
+    margin-top: 15px;
+   
+        
+}
+.opinionesResena{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.numeros{
+   font-size: 25px;
+     
+}
+
+.estrellasResena{
+   margin-left: 10px;
+    color: #ffd22b;  
+}
+
+.opinionesContainer{
+    margin-top: 20px;
+    height: 210px;
+    overflow: scroll;
+    
+}
+
+.cliente{
+    font-size: 15px;
+    margin-bottom: 20px
+}
+
+@media only screen and (max-width: 768px){
+    .infoTour{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;    
+        }
+        
+    .intro{
+        font-size: 15px;
+        position: relative;
+        bottom: 10px;
+    }
+    .infoGral{
+        position: relative;
+        bottom: 30px;
+        
+    }
+    .infoGral h2{
+        font-size: 23px;
+    }
+    
+    .boxReserva{
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column; 
+    }
+    
+    .btn-danger{
+        width: 50%;
+        height: 50px;
+    }
+    
+    #carouselExampleControls img{
+       position: relative;
+       right: 7px; 
+        
+    }
+    
+    .resenas{
+        margin-top: 15px;
+        margin-left: 10px;     
+    }
+  
+    h3{
+    font-size: 18px;
+    margin-top: 15px;
+   
+        
+ }
+
+ .opinionesContainer{
+    margin-top: 20px;
+    margin-left: -6px;
+     height: 100%;
+  width: 100%;
+    
+ }
+
+ .cliente{
+    font-size: 15px;
+    margin-bottom: 20px
+ }
+    
+}
+
+@media (max-width:576px){
+    .carousel-inner{
+        display: none;    
+    }
+    .resenas{
+        margin-top: 30px
+    }
+}

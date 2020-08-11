@@ -1,0 +1,104 @@
+<html>
+
+<head>
+  <!-- HEAD -->
+  <%- include("./partials/head") %>
+  <title><%= title %></title>
+
+  <!-- BOOSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <%- include("./partials/cssGeneral") %>
+  <link rel="stylesheet" href="/stylesheets/faqs.css">
+  <!-- Script Barra buscador -->
+  <script src="/javascript/buscador.js"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <%- include("partials/header") %>
+  <!-- FIN DEL HEADER -->
+
+  <!-- CODIGO -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 faqs">
+        <h1>Preguntas Frecuentes</h1>
+        <ul class="listaPreguntas">
+
+          <li class="article-list-item">
+            <div class="pregunta">¿Es posible pagar a plazos?</div>
+            <div class="Respuesta">
+              <p>Actualmente solo nuestros clientes procedentes de Argentina, México, Brasil, Colombia, Chile y Perú
+                pueden seleccionar el pago aplazado, pagando en pesos argentinos (ARS), pesos mexicanos (MXN), reales
+                brasileños (R$), pesos colombianos (COP), pesos chilenos ($) o soles peruanos (S/.)</p>
+            </div>
+          </li>
+          <li class="article-list-item">
+            <div class="pregunta">¿Cuál es el punto de encuentro de la actividad?</div>
+            <div class="Respuesta">
+              <p>El punto de encuentro está detallado&nbsp;en cada actividad así como en el email de confirmación una
+                vez realizada la reserva. Si tienes dudas una vez en el destino, puedes contactar con el proveedor local
+                en el teléfono que verás en el bono.</p>
+            </div>
+          </li>
+          <li class="article-list-item">
+            <div class="pregunta">Vamos a viajar a otras ciudades ¿dónde más tenéis tours?</div>
+            <div class="Respuesta">
+              <p>Podéis ver todas nuestras guías de viajes en <a title="Guías de viajes BTours"
+                  href="https://www.btours.com/" class="href">BTours</a>, en la mayoría de ellas – especialmente las de Europa
+                – tenemos servicios de visitas guiadas, excursiones y traslados.</p>
+            </div>
+          </li>
+          <li class="article-list-item">
+            <div class="pregunta">¿Tenéis otros tours o actividades a parte de los publicados en cada
+              destino?</div>
+            <div class="Respuesta">
+              <p>En algunos destinos&nbsp;ofrecemos servicios privados para actividades no publicadas en la web. En todo
+                caso, puedes ver todos los servicios con los que contamos en&nbsp;<a
+                  href="https://www.BTours.com/productos" class="href">BTours</a>.</p>
+            </div>
+          </li>
+          <li class="article-list-item">
+            <div class="pregunta">¿Es necesario imprimir un bono o justificante?</div>
+            <div class="Respuesta">
+              <p>Algunos servicios requieren un bono impreso, otros en el móvil, y otros no requieren llevar nada. Ésto
+                es específico de cada actividad y lo podréis ver en su ficha.</p>
+            </div>
+          </li>
+          <li class="article-list-item">
+            <div class="pregunta">En las excursiones en vehículo ¿hay sillas para niños pequeños?</div>
+            <div class="Respuesta">
+              <p>Los proveedores disponen de sillitas de niño en función de las leyes del país (en el 90% de los
+                destinos son obligatorias). Al hacer la reserva no olvidéis indicar la edad de los niños en los
+                comentarios.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- FIN DEL CODIGO -->
+
+  <!-- FOOTER -->
+  <%- include("./partials/footer") %>
+
+
+  <!-- SCRIPT DE BOOSTRAP -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <!-- SCRIPT DE ESTRELLAS -->
+  <script src="https://kit.fontawesome.com/dc516cd5e4.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</html>

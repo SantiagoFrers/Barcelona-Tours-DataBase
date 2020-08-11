@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <!-- HEAD -->
+  <%- include("./partials/head") %>
+
+  <!-- BOOSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <%- include("./partials/cssGeneral") %>
+  <link rel="stylesheet" href="/stylesheets/createAccount.css">
+
+  <!-- Script validacion -->
+  <script src="/javascript/createAccountValidacion.js"></script>
+  <!-- Script Barra buscador -->
+  <script src="/javascript/buscador.js"></script>
+</head>
+
+<body>
+  <% if(typeof errors != "undefined") { %>
+    <p style="color: red;">ERROR</p>
+    <ul>
+      <% for(let i = 0; i < errors.length; i++) { %>
+        <li>
+          <%= errors[i].msg %>
+        </li>
+      <% } %>
+    </ul>
+  <% } %>
+  <!-- HEADER -->
+  <%- include("./partials/header") %>
+
+  <!-- CODIGO -->
+  <div class="container createAccount mx-auto">
+    <div class="row">
+      <div class="col-lg-10 col-xl-9 mx-auto">
+        <div class="card card-signin flex-row">
+          <div class="card-img-left d-none d-md-flex">
+            <!-- Background image for card set in CSS! -->
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-center">Crea tu cuenta</h5>
+            <section>
+              <ul id="errors"></ul>
+            </section>
+            <form class="form-signin" method="POST" action="/users/registrar" enctype="multipart/form-data">
+              <div class="form-label-group">
+                <input type="text" id="inputUserame" class="form-control" name="nombre" placeholder="Name" required autofocus>
+                <label for="inputUserame">Nombre</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="text" id="inputLastname" class="form-control" name="apellido" placeholder="Lastname" required>
+                <label for="inputLastname">Apellido</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address" required>
+                <label for="inputEmail">Casilla de e-mail</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="email" id="inputConfirmEmail" class="form-control" name="emailconfirm" placeholder="Email address" required>
+                <label for="inputConfirmEmail">Confirmar casilla de e-mail</label>
+              </div>
+
+              <hr>
+
+              <div class="form-label-group">
+                <input type="password" id="inputPassword" class="form-control" name="pass" placeholder="Password" required>
+                <label for="inputPassword">contrasena</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="password" id="inputConfirmPassword" class="form-control" name="passconfirm" placeholder="Password" required>
+                <label for="inputConfirmPassword">Confirmar contrasena</label>
+              </div>
+
+              <div class="form-label-group">
+                <input type="file" id="inputFile2" class="form-control" name="avatar" required>
+                <label for="inputFile">Avatar</label>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+              <!-- COLOCAR PAGINA SIGNIN -->
+              <a class="d-block text-center mt-2 small" href="/users/ingresar">Ingresar</a>
+              <hr class="my-4">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <%- include("./partials/footer") %>
+
+  <!-- SCRIPT DE bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- SCRIPT DE ESTRELLAS -->
+  <script src="https://kit.fontawesome.com/dc516cd5e4.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

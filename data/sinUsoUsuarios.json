@@ -1,0 +1,47 @@
+[
+ {
+  "id": 1,
+  "nombre": "Male",
+  "apellido": "Alimona",
+  "email": "male@gmail.com",
+  "contrasena": "$2b$10$5y.AwciMO.WSbIrOWcjC9.wdA02.zJJXI/R58meUJjnLz.R7hmpuO",
+  "userType": "admin",
+  "avatar": "male.jpg"
+ },
+ {
+  "id": 3,
+  "nombre": "Santiago",
+  "apellido": "Frers",
+  "email": "santi@gmail.com",
+  "contrasena": "$2b$10$5y.AwciMO.WSbIrOWcjC9.wdA02.zJJXI/R58meUJjnLz.R7hmpuO",
+  "userType": "admin",
+  "avatar": "santi.jpg"
+ },
+ {
+  "id": 4,
+  "nombre": "Pepe",
+  "apellido": "Mujica",
+  "email": "pepe@gmail.com",
+  "contrasena": "$2b$10$5y.AwciMO.WSbIrOWcjC9.wdA02.zJJXI/R58meUJjnLz.R7hmpuO",
+  "userType": "user",
+  "avatar": "pepe.jpg"
+ },
+ {
+  "id": 5,
+  "nombre": "Macri",
+  "apellido": "Cat",
+  "email": "cat@gmail.com",
+  "contrasena": "$2b$10$5y.AwciMO.WSbIrOWcjC9.wdA02.zJJXI/R58meUJjnLz.R7hmpuO",
+  "userType": "user",
+  "avatar": "macri.jpg"
+ },
+ {
+  "id": 6,
+  "nombre": "Alberto",
+  "apellido": "Cuarentena",
+  "email": "peronia@gmail.com",
+  "contrasena": "$2b$10$5y.AwciMO.WSbIrOWcjC9.wdA02.zJJXI/R58meUJjnLz.R7hmpuO",
+  "userType": "user",
+  "avatar": "alberto.jpg"
+ }
+]

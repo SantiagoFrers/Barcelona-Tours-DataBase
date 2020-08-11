@@ -1,0 +1,64 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 500px;
+}
+
+/* CARGA PRODUCTOS */
+.bg-color {
+  background-color: white;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.categoria {
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: bold;
+
+}
+
+.actividades {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.opcion-act {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.opciones-categoria {
+  padding-left: 20px;
+}
+
+.form-check label {
+  font-size: 13px;
+}
+
+.opciones-carga-archivo {
+  border-left: 1px solid red;
+}
+
+.botones {
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .bg-color {
+    position: relative;
+    left: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    height: auto;
+  }
+
+  .carga-archivo {
+    margin-right: 30px;
+  }
+  .opciones-carga-archivo {
+    border-left: none;
+    margin-right: 30px;
+  }
+}

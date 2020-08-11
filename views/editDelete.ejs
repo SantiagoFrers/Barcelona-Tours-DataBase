@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- HEAD -->
+  <%- include("./partials/head") %>
+  <title>Alta de producto</title>
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CSS -->
+  <%- include("./partials/cssGeneral") %>
+  <link rel="stylesheet" href="/stylesheets/cargaProducto.css">
+  <!-- SCript Validacion -->
+  <script src="/javascript/editarProductoValidacion.js"></script>
+  <!-- Script Barra buscador -->
+  <script src="/javascript/buscador.js"></script>
+</head>
+
+<body>
+
+  <!--HEADER-->
+  <%- include("./partials/header") %>
+
+  <!-- CODIGO -->
+  <% if(typeof errors != "undefined") { %>
+  <p style="color: red;">ERROR</p>
+  <ul>
+    <% for(let i = 0; i < errors.length; i++) { %>
+    <li>
+      <%= errors[i].msg %>
+    </li>
+    <% } %>
+  </ul>
+  <% } %>
+
+  <div class="container bg-color">
+    <section>
+      <ul id="errors"></ul>
+    </section>
+    <form class="editarProducto" action="/productos/editar/<%= productToEdit.id %>" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="carga-archivo">
+            <div class="form-group">
+              <label for="text">NOMBRE</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="text"
+                placeholder="Ingrese el nombre" required value="<%= productToEdit.nombre %>">
+            </div>
+
+            <div class="form-group">
+              <label for="precio">Precio</label>
+              <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio"
+                required value="<%= productToEdit.precio %>">
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion">Descripcion corta del Producto</label>
+              <textarea class="form-control" id="descripcionCorta" name="descripcionCorta" rows="3"
+                required><%= productToEdit.descripcion_corta %></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion">Descripcion del Producto</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
+                required><%= productToEdit.descripcion %></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 opciones-carga-archivo">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="seleccionar-archivo" name="image" lang="es" required
+              value="<%= productToEdit.image %>">
+            <label class="custom-file-label" for="seleccionar-archivo">Imagen 350x200 px </label>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="seleccionar-archivo-grande" name="imageGrande" lang="es" required
+              value="<%= productToEdit.image_grande %>">
+            <label class="custom-file-label" for="seleccionar-archivo">Imagen 1490 x 490 px</label>
+          </div>
+          <label class="vistaHome" for="">Tours en Home</label>
+          <select name="vistaHome" id="vistaHome" class="form-input">
+            <option value="buscados" <%= productToEdit.vistaHome == 'buscados' ? 'selected' : null %>>Buscados</option>
+            <option value="recomendados" <%= productToEdit.vistaHome == 'recomendados' ? 'selected' : null %>>
+              Recomendados</option>
+            <option value="none" <%= productToEdit.vistaHome == 'none' ? 'selected' : null %>>No va en Home</option>
+          </select>
+          <br>
+          <label class="categoria" for="">Categoría</label>
+          <br>
+          <select name="categoria" id="categoria" class="form-input">
+            <option value="1" <%= productToEdit.tour_tipo == '1' ? 'selected' : null %>>Tours y Paseos </option>
+            <option value="2" <%= productToEdit.tour_tipo == '2' ? 'selected' : null %>>
+              Espectaculos y Entretenimiento</option>
+            <option value="3" <%= productToEdit.tour_tipo == '3' ? 'selected' : null %>>Talleres y Clases
+            </option>
+            <option value="4" <%= productToEdit.tour_tipo == '4' ? 'selected' : null %>>Aventura y Deporte
+            </option>
+            <option value="5" <%= productToEdit.tour_tipo == '5' ? 'selected' : null %>>Arte y Cultura</option>
+            <option value="6" <%= productToEdit.tour_tipo == '6' ? 'selected' : null %>>Belleza y Salud
+            </option>
+          </select>
+
+          <div class="botones">
+            <button type="submit" class="btn btn-outline-success">Editar</button>
+
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 DELETE">
+      <form action="/productos/eliminar/<%= productToEdit.id %>?_method=DELETE" method="POST"
+        style="display: inline-flex">
+        <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <%- include("./partials/footer") %>
+
+  <!--SCRIPT FOOTER-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/dc516cd5e4.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

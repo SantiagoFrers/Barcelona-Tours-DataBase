@@ -1,0 +1,31 @@
+.faqs {
+    margin-top: 30px;
+    background: white;
+    border-radius: 4%;
+    padding: 30px
+}
+
+h1 {
+    text-decoration: underline #9d001b;
+    font-weight: bold;
+
+}
+
+ul {
+    list-style-type: none;
+
+
+}
+
+ul li .pregunta {
+    font-weight: bold;
+    margin-top: 20px
+}
+
+.href {
+    color: #9d001b;
+}
+
+.href:hover {
+    color: #9d001b;
+}

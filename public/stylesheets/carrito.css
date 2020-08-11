@@ -1,0 +1,271 @@
+.container {
+    padding-bottom: 20px;
+}
+
+.titulo-carrito {
+    border-bottom: 3px solid #9d001b;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 20px
+}
+
+.informacion-tour {
+    background: white;
+    margin-top: 60px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+    padding-bottom: 8px;
+    overflow: hidden;
+}
+
+.imagen-producto img {
+    width: 50%;
+    height: 104%;
+    float: left;
+    position: relative;
+    top: 20px;
+    right: 20px
+}
+
+.informacion-producto {
+    margin-top: 20px;
+    position: relative;
+    word-wrap: break-word
+}
+
+.informacion-producto p {
+    font-size: 15px;
+    width: 44%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.reservar {
+    position: relative;
+    top: 40px;
+    width: 20px;
+
+}
+
+.boxReserva {
+    background: white;
+    position: relative;
+    top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+    padding: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 253px;
+}
+
+.cant-personas {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.precio {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.mensaje {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.btn-danger {
+    background-color: #9d001b;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.boton-reservar {
+    width: 100%;
+    position: relative;
+    top: 10px
+}
+
+.titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+
+
+}
+
+.subrayado {
+    border-bottom: 2px solid #9d001b;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    left: 390px;
+}
+
+.boton-ver {
+    padding: 10px;
+
+}
+
+.alineacion-central {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.box-producto {
+    background-color: white;
+    padding-bottom: 10px;
+    flex-basis: 23%;
+    margin: 0.5%;
+    border-radius: 4%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.boxTotal {
+    background: white;
+    position: relative;
+    top: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175);
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    height: 10%px;
+    width: 100%;
+    right: 20px
+}
+
+.botones .boton-reservaTot {
+    width: 100%
+}
+
+.box-producto img {
+    width: 100%;
+}
+
+.imagen-producto {
+    position: relative;
+    top: -20px
+}
+
+footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(max-width: 576px) {
+    .imagen-producto img {
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 5px
+    }
+
+    .informacion-producto h2 {
+        text-align: center;
+    }
+
+    .informacion-tour {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .informacion-producto p {
+        font-size: 0px;
+        margin-top: 0px;
+    }
+
+    .boxReserva {
+        margin-top: 0px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .titulo {
+        margin-top: 20px;
+        position: relative;
+        left: -60px;
+    }
+
+    .subrayado {
+        border-bottom: 2px solid #9d001b;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+
+    .box-producto img {
+        margin-left: 0px;
+        width: 101%;
+        margin-top: 0px
+    }
+
+    footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .informacion-producto h2 {
+        text-align: center;
+    }
+
+    .imagen-producto img {
+        position: relative;
+        left: 0px;
+        top: 15px;
+
+    }
+
+    .informacion-producto p {
+        width: 45%;
+        position: relative;
+        left: 15px;
+        top: -5px
+    }
+
+    .boxReserva {
+        margin-top: 0px;
+        padding-bottom: 250px
+    }
+
+    .cant-personas {
+        font-size: 30px;
+    }
+
+    .btn-danger {
+        padding: 20px
+    }
+
+    .subrayado {
+        border-bottom: 2px solid #9d001b;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        position: relative;
+        left: 190px;
+    }
+
+}

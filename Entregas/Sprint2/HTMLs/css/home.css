@@ -1,0 +1,169 @@
+
+
+/* SLIDER */
+.slider {
+  position: relative;
+  bottom: 26px;
+  max-width: 100%;
+}
+
+.carousel-control-prev-icon{
+  position: relative;
+  right: 50px;
+}
+
+.carousel-control-next-icon{
+  position: relative;
+  left: 50px;
+}
+
+/* MENU ACT*/
+.menu-bar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.boton-menu {
+  color: black;
+}
+
+.boton-menu:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.boton-menu img {
+  background-color: white;
+  border-radius: 50px;
+}
+
+.boton-menu img:hover {
+  background-color: #ea7c7c;
+}
+.titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.subrayado {
+  border-bottom: 2px solid #9d001b;
+}
+
+.alineacion-central {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-producto {
+  background-color: white;
+  padding: 0.5%;
+  flex-basis: 30%;
+  margin: 0.5%;
+  border-radius: 4%;
+  position: relative;
+  
+}
+
+.box-producto:hover {
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagen-producto {
+  width: 95%;
+  position: relative;
+  left: 8px;
+  top: 5px;
+}
+
+.estrellas {
+  color: #ffd22b;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.nombre-tour {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.descripcion-tour {
+  color: gray;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.linea-precio {
+  text-align: center;
+  margin-top: 5px;
+}
+.precio-original {
+  text-decoration: line-through;
+  font-size: 0.8em;
+}
+
+.precio-BT {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* PRUEBA DE ALINEACION DE BOTON */
+.boton-ver {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* MOBIL */
+@media (max-width: 767px) {
+
+  .slider{
+    display: none;
+  }
+  .menu-icon{
+    display: none;
+  }
+  .titulo{
+    font-size: 1em;    
+  } 
+  
+}
+
+/* TABLET */
+@media (max-width: 991px) {
+  .boton-menu {
+    font-size: 0.8em;
+    display: flex;
+    flex-wrap: wrap;
+ justify-content: center;
+ padding-left: 0px;
+    }
+
+    .menu-bar {
+      padding-left: 0px;
+    }
+
+.boton-menu img{
+  width: 70px;
+  height: 70px;
+}
+.titulo {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.alineacion-central{
+  justify-content: center;
+}
+
+.box-producto{
+  margin-bottom: 5px;
+}
+
+}

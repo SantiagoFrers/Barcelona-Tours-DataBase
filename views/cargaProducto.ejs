@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- HEAD -->
+  <%- include("./partials/head") %>
+  <title>Alta de producto</title>
+  <!-- Boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- CSS -->
+  <%- include("./partials/cssGeneral") %>
+  <link rel="stylesheet" href="/stylesheets/cargaProducto.css">
+  <!-- Script Validation -->
+  <script src="/javascript/crearProductoValidacion.js"></script>
+  <!-- Script Barra buscador -->
+  <script src="/javascript/buscador.js"></script>
+</head>
+
+<body>
+  <!--HEADER-->
+  <%- include("./partials/header") %>
+
+  <!-- CODIGO -->
+  <% if(typeof errors != "undefined") { %>
+    <p style="color: red;">ERROR</p>
+    <ul>
+      <% for(let i = 0; i < errors.length; i++) { %>
+      <li>
+        <%= errors[i].msg %>
+      </li>
+      <% } %>
+    </ul>
+    <% } %>
+  <div class="container bg-color">
+    <section>
+      <ul id="errors"></ul>
+    </section>
+    <form class="crearProducto" action="#" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="carga-archivo">
+            <div class="form-group">
+              <label for="text">NOMBRE</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="text"
+                placeholder="Ingrese el nombre" required="" value="Ingresar el nombre del tour">
+            </div>
+            <div class="form-group">
+              <label for="precio">Precio</label>
+              <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingrese el precio"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion">Descripcion corta del Producto</label>
+              <textarea class="form-control" id="descripcionCorta" name="descripcionCorta"  maxlength="120" minlength="15"
+                rows="3" required>Maximo 120 caracteres - Minimo 15</textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="descripcion">Descripcion del Producto</label>
+              <textarea class="form-control" id="descripcion" name="descripcion" maxlength="120" minlength="40" rows="3"
+                required>Minimo 40 caracteres</textarea>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 opciones-carga-archivo">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="seleccionar-archivo" name="image" lang="es" required>
+            <label class="custom-file-label" for="seleccionar-archivo">Imagen 350x200 px </label>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="seleccionar-archivo-grande" name="imageGrande" lang="es" required>
+            <label class="custom-file-label" for="seleccionar-archivo">Imagen 1490 x 490 px</label>
+          </div>
+          <label class="vistaHome" for="">Tours en Home</label>
+          <select name="vistaHome" id="vistaHome" class="form-input">
+            <option value="">Elegí</option>
+            <option value="buscados">buscados</option>
+            <option value="recomendados">recomendados</option>
+            <option value="none">No va en Home</option>
+          </select>
+          <br>
+          <label class="categoria" for="">Categoría</label>
+          <br>
+
+          <select name="categoria" id="categoria" class="form-input">
+            <option value="">Elegí</option>
+            <option value="1">Tours y Paseos </option>
+            <option value="2">Espectaculos y Entretenimiento</option>
+            <option value="3">Talleres y Clases</option>
+            <option value="4">Aventura y Deporte</option>
+            <option value="5">Arte y Cultura</option>
+            <option value="6">Belleza y Salud</option>
+          </select>
+
+          <div class="botones">
+            <input class="btn btn-outline-success btn-sm" type="submit" value="Crear">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+  <%- include("./partials/footer") %>
+
+  <!--SCRIPT FOOTER-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/dc516cd5e4.js" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>

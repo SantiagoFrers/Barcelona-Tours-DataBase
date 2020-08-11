@@ -1,0 +1,143 @@
+/* CARGA PRODUCTOS */
+
+.bg-color {
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+.carga-archivo {
+  margin-top: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.categoria {
+  font-size: 18px;
+  padding-top: 10px;
+  font-weight: bold;
+
+}
+
+.actividades {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.opcion-act {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.opciones-categoria {
+  padding-left: 20px;
+}
+
+.form-check label {
+  font-size: 13px;
+}
+
+.opciones-carga-archivo {
+  border-left: 1px solid #9d001b;
+  margin-top: 20px;
+}
+
+.custom-file {
+  margin: 10px;
+  position: relative;
+  top: 25px
+}
+
+.vistaHome {
+  position: relative;
+  top: 45px;
+  left: 13px
+}
+
+.form-input {
+  position: relative;
+  top: 45px;
+  left: 15px;
+  height: 35px
+}
+
+.categoria {
+  position: relative;
+  top: 45px;
+  left: 13px
+}
+
+.botones .btn {
+  width: 100px;
+  position: relative;
+  top: 195px;
+  left: 80px
+}
+
+.btn-outline-danger {
+  width: 100px;
+  position: relative;
+  left: 950px;
+  bottom: 89px
+}
+
+
+
+
+@media (max-width: 768px) {
+  .bg-color {
+    position: relative;
+    left: 30px;
+  }
+
+  .botones {
+    position: relative;
+    left: -70px;
+  }
+
+  .botones .btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .bg-color {
+    width: 90%;
+    position: relative;
+    left: 0px
+  }
+
+  .carga-archivo {
+    margin-right: auto;
+
+  }
+
+  .opciones-carga-archivo {
+    border-left: none;
+    margin-right: 30px;
+  }
+
+  .botones {
+    position: relative;
+    left: -20px;
+  }
+
+  .botones .btn {
+    width: 50%;
+
+  }
+}

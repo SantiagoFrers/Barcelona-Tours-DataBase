@@ -1,6 +1,6 @@
 Guia de instalacion: <br>
 	1) DESCARGAR PROYECTO: <br>
-		Clonar repositorio: https://github.com/0220CBFSNCN01ARND/Nordelta-Team-5.git <br>
+		Clonar repositorio: https://github.com/SantiagoFrers/barcelotaTours.git <br>
 	2) INSTALACION: <br>
 		Dntro de la terminal ingresar a la carpeta y en npm install <br>
 	3) EJECUCION BASE DE DATOS: <br>

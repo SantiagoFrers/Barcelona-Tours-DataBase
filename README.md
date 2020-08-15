@@ -9,11 +9,6 @@ Guia de instalacion: <br>
 		Abril WorkBench - Ingresar a la carpeta Entregas/Sprint5, crear base de datos con archivo structure.sql y poblar la base con data.sql <br>
 	5) ALTA DE PROYECTO: <br>
 		Ejecutar en terminal npm start y acceder a: http://localhost:3030/ <br>
-	6) TABLERO REACT: <br>
-		a) INSTALACION: <br>
-			Dentro de una nueva terminal ingresar a la carpeta "Tablero"y en npm install <br>
-		b) EJECUCION: <br>
-			Ejecutar en la nueva terminal npm start y acceder a: http://localhost:3000/ <br>
 
 <br>
 <br>
